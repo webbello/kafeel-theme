@@ -13,10 +13,12 @@
  */
 
 get_header();
+get_header('navbar');
 ?>
 
 	<main id="primary" class="site-main container">
-
+	<div class="row g-5">
+		<div class="col-md-8">
 		<?php
 		if ( have_posts() ) :
 
@@ -49,9 +51,14 @@ get_header();
 
 		endif;
 		?>
+		</div>
+		<div class="col-md-4">
+			<?php get_sidebar(); ?>
+		</div>
+	</div>
 
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

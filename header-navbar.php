@@ -32,8 +32,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 					'walker' => new WP_Bootstrap5_Navwalker()
 				));
 				?>
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<form class="d-flex" role="search" method="get" action="http://localhost/kafeel/">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="s">
 					<button class="btn btn-outline-success" type="submit">Search</button>
 				</form>
 			</div>

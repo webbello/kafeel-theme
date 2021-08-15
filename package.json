@@ -16,11 +16,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@popperjs/core": "^2.9.2",
-    "bootstrap": "^5.0.2",
-    "laravel-mix": "^6.0.25",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@popperjs/core": "^2.9.3",
+    "bootstrap": "^5.1.0",
+    "laravel-mix": "^6.0.27",
+    "purgecss-with-wordpress": "^4.0.3",
     "resolve-url-loader": "^4.0.0",
-    "sass": "^1.35.2",
+    "sass": "^1.37.5",
     "sass-loader": "^12.1.0"
   }
 }
