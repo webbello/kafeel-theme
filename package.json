@@ -24,5 +24,12 @@
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.37.5",
     "sass-loader": "^12.1.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "glightbox": "^3.0.9",
+    "isotope-layout": "^3.0.6",
+    "swiper": "^6.8.3",
+    "vanilla-lazyload": "^17.4.0"
   }
 }

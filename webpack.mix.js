@@ -11,8 +11,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     // keyframes: true,
     safelist: [
         ...purgecssWordpress.safelist,
-        'slide',
-        'carousel-item',
+        'header-scrolled',
+        'navbar-mobile',
         /^red/,
         /blue$/,
     ],
