@@ -1,109 +1,20 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-	background: #fff;
-	color: #666666;
-	font-family: "Open Sans", sans-serif;
-  }
-  
-  a {
-	color: #18d26e;
-	transition: 0.5s;
-	text-decoration: none;
-  }
-  
-  a:hover, a:active, a:focus {
-	color: #18d36e;
-	outline: none;
-	text-decoration: none;
-  }
-  
-  p {
-	padding: 0;
-	margin: 0 0 30px 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	margin: 0 0 20px 0;
-	padding: 0;
-  }
-  
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
-  .back-to-top {
-	position: fixed;
-	visibility: hidden;
-	opacity: 0;
-	right: 15px;
-	bottom: 15px;
-	z-index: 996;
-	background: #18d26e;
-	width: 40px;
-	height: 40px;
-	border-radius: 50px;
-	transition: all 0.4s;
-  }
-  
-  .back-to-top i {
-	font-size: 28px;
-	color: #fff;
-	line-height: 0;
-  }
-  
-  .back-to-top:hover {
-	background: #2ce782;
-	color: #fff;
-  }
-  
-  .back-to-top.active {
-	visibility: visible;
-	opacity: 1;
-  }
-  
-  /* Prelaoder */
-  #preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9999;
-	overflow: hidden;
-	background: #fff;
-  }
-  
-  #preloader:before {
-	content: "";
-	position: fixed;
-	top: calc(50% - 30px);
-	left: calc(50% - 30px);
-	border: 6px solid #f2f2f2;
-	border-top: 6px solid #18d26e;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	-webkit-animation: animate-preloader 1s linear infinite;
-	animation: animate-preloader 1s linear infinite;
-  }
-  
-  @-webkit-keyframes animate-preloader {
-	0% {
-	  transform: rotate(0deg);
-	}
-	100% {
-	  transform: rotate(360deg);
-	}
-  }
-  
-  @keyframes animate-preloader {
-	0% {
-	  transform: rotate(0deg);
-	}
-	100% {
-	  transform: rotate(360deg);
-	}
-  }
+@charset "UTF-8";
+
+/*
+Theme Name: Kafeel
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Kafeel is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how Kafeel elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Kafeel WordPress Theme, (C) 2020 WordPress.org
+Kafeel is distributed under the terms of the GNU GPL.
+*/

@@ -1,8 +1,13 @@
-<?php /* Template Name: Home Template */ ?>
 <?php
 get_header();
 // get_header('navbar');
-get_template_part( 'template-parts/header/header', 'menu' );
+get_template_part( 'template-parts/header/header', 'menu', array( 
+    'class' => 'header-transparent',
+    'data'  => array(
+      'size' => 'large',
+      'is-active' => true,
+    ))
+);
 get_template_part( 'template-parts/header/hero' );
 ?>
 <main id="primary" class="site-main">

@@ -13,52 +13,59 @@
  */
 
 get_header();
-get_header('navbar');
+get_template_part( 'template-parts/header/header', 'menu' );
 ?>
+<main id="primary" class="site-main ">
+	<?php get_template_part( 'template-parts/header/header', 'breadcrumb' ); ?>
+	<section class="inner-page mt-4">
+      <div class="container">
+		<div class="row g-5">
+			<div class="col-md-8">
+			<?php
+			if ( have_posts() ) :
 
-	<main id="primary" class="site-main container">
-	<div class="row g-5">
-		<div class="col-md-8">
-		<?php
-		if ( have_posts() ) :
+				if ( is_home() && ! is_front_page() ) :
+					?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					</header>
+					<?php
+				endif;
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
+
+					/*
+					* Include the Post-Type-specific template for the content.
+					* If you want to override this in a child theme, then include a file
+					* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					*/
+					get_template_part( 'template-parts/content', get_post_type() );
+
+				endwhile;
+
+				the_posts_navigation();
+
+			else :
+
+				get_template_part( 'template-parts/content', 'none' );
+
 			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
+			?>
+			</div>
+			<div class="col-md-4">
+				<div class="position-sticky">
+					<?php get_sidebar(); ?>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-4">
-			<?php get_sidebar(); ?>
-		</div>
-	</div>
+      </div>
+    </section>
 
-	</main><!-- #main -->
+</main><!-- #main -->
 
+<?php get_template_part( 'template-parts/footer/footer', 'top' ); ?>
 <?php
-// get_sidebar();
 get_footer();
+?>

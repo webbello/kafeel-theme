@@ -13,6 +13,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
         ...purgecssWordpress.safelist,
         'header-scrolled',
         'navbar-mobile',
+        'dropdown-active',
         /^red/,
         /blue$/,
     ],
