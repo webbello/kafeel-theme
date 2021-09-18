@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap-icons": "^1.5.0",
     "glightbox": "^3.0.9",
     "isotope-layout": "^3.0.6",
     "swiper": "^6.8.3",
