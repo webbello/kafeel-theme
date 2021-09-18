@@ -13,14 +13,14 @@
  */
 
 get_header();
-get_template_part( 'template-parts/header/header', 'menu' );
+get_template_part( 'template-parts/header/header', 'inner' );
 ?>
 <main id="primary" class="site-main ">
 	<?php get_template_part( 'template-parts/header/header', 'breadcrumb' ); ?>
 	<section class="inner-page mt-4">
       <div class="container">
 		<div class="row g-5">
-			<div class="col-md-8">
+			<div class="col-md-12">
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -35,9 +35,9 @@ get_template_part( 'template-parts/header/header', 'menu' );
 			endwhile; // End of the loop.
 			?>
 			</div>
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 				<?php get_sidebar(); ?>
-			</div>
+			</div> -->
 		</div>
       </div>
     </section>

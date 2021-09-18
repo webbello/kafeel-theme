@@ -8,6 +8,7 @@ import GLightbox from 'glightbox';
 import Swiper from 'swiper';
 import AOS from 'aos';
 import Isotope from 'isotope-layout';
+import "animate.css";
 
 (function() {
     "use strict";

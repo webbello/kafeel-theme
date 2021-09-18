@@ -146,6 +146,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		array(
 			'main-menu'   => 'Main Navigation Menu',
 			'one-page-menu'   => 'One Page Navigation Menu',
+			'inner-page-menu' => 'Inner Page  Menu',
 			'footer-menu' => 'Footer Menu',
 		)
 	);

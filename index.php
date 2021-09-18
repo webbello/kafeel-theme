@@ -13,7 +13,7 @@
  */
 
 get_header();
-get_template_part( 'template-parts/header/header', 'menu' );
+get_template_part( 'template-parts/header/header', 'inner' );
 ?>
 <main id="primary" class="site-main ">
 	<?php get_template_part( 'template-parts/header/header', 'breadcrumb' ); ?>
